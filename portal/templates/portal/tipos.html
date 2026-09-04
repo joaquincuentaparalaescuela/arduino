@@ -1,0 +1,153 @@
+{% extends 'portal/base.html' %}
+{% block title %}Tipos de placas Arduino - ArduinoWiki{% endblock %}
+{% block content %}
+
+<div class="text-center mb-5">
+<span class="section-label d-block">03 · Catálogo</span>
+<h2 class="section-title">Tipos de placas Arduino</h2>
+<p class="section-intro">Tres modelos clásicos de la familia Arduino, cada uno pensado
+para una escala distinta de proyecto. Compará sus características antes de elegir
+la que mejor se adapte al tuyo.</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+
+<!-- Placa 1: Arduino Uno -->
+<div class="col">
+<div class="card card-placa h-100">
+<div class="placa-img-wrap">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arduino_UNO.jpg" class="placa-img" alt="Placa Arduino Uno">
+</div>
+<div class="card-body">
+<span class="placa-badge">Modelo estándar</span>
+<h5 class="card-title">Arduino Uno</h5>
+<p class="card-text">La placa más conocida de la familia y punto de partida
+recomendado para quien recién empieza. Ofrece un equilibrio simple entre
+pines disponibles, memoria y tamaño, suficiente para la gran mayoría de
+proyectos de introducción a la electrónica.</p>
+<ul class="placa-specs">
+<li><span>Microcontrolador</span><strong>ATmega328P</strong></li>
+<li><span>Pines digitales</span><strong>14 (6 PWM)</strong></li>
+<li><span>Entradas analógicas</span><strong>6</strong></li>
+<li><span>Memoria flash</span><strong>32 KB</strong></li>
+</ul>
+</div>
+<div class="card-footer bg-transparent border-0">
+<span class="badge badge-vintage">Ideal para iniciarse</span>
+<span class="badge badge-vintage">Tamaño estándar</span>
+</div>
+</div>
+</div>
+
+<!-- Placa 2: Arduino Mega 2560 -->
+<div class="col">
+<div class="card card-placa h-100">
+<div class="placa-img-wrap">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arduino_MEGA2560.png" class="placa-img" alt="Placa Arduino Mega 2560">
+</div>
+<div class="card-body">
+<span class="placa-badge">Modelo ampliado</span>
+<h5 class="card-title">Arduino Mega 2560</h5>
+<p class="card-text">La versión "grande" de la familia: multiplica la cantidad
+de pines y memoria disponible respecto al Uno. Se elige cuando un proyecto
+necesita controlar muchos sensores y motores a la vez, como impresoras 3D
+o brazos robóticos.</p>
+<ul class="placa-specs">
+<li><span>Microcontrolador</span><strong>ATmega2560</strong></li>
+<li><span>Pines digitales</span><strong>54 (15 PWM)</strong></li>
+<li><span>Entradas analógicas</span><strong>16</strong></li>
+<li><span>Memoria flash</span><strong>256 KB</strong></li>
+</ul>
+</div>
+<div class="card-footer bg-transparent border-0">
+<span class="badge badge-vintage">Proyectos grandes</span>
+<span class="badge badge-vintage">Más memoria</span>
+</div>
+</div>
+</div>
+
+<!-- Placa 3: Arduino Nano -->
+<div class="col">
+<div class="card card-placa h-100">
+<div class="placa-img-wrap">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arduino_Nano.jpg" class="placa-img" alt="Placa Arduino Nano">
+</div>
+<div class="card-body">
+<span class="placa-badge">Modelo compacto</span>
+<h5 class="card-title">Arduino Nano</h5>
+<p class="card-text">Conserva casi las mismas prestaciones que el Uno pero en un
+formato reducido, pensado para montarse directamente sobre una protoboard.
+Es la opción preferida cuando el espacio es limitado, como en wearables o
+proyectos portátiles.</p>
+<ul class="placa-specs">
+<li><span>Microcontrolador</span><strong>ATmega328P</strong></li>
+<li><span>Pines digitales</span><strong>14 (6 PWM)</strong></li>
+<li><span>Entradas analógicas</span><strong>8</strong></li>
+<li><span>Memoria flash</span><strong>32 KB</strong></li>
+</ul>
+</div>
+<div class="card-footer bg-transparent border-0">
+<span class="badge badge-vintage">Tamaño reducido</span>
+<span class="badge badge-vintage">Uso en protoboard</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- TABLA COMPARATIVA -->
+<div class="comparativa-wrap mb-4">
+<span class="section-label d-block mb-2">Cuadro comparativo</span>
+<div class="table-responsive">
+<table class="table table-comparativa align-middle">
+<thead>
+<tr>
+<th>Característica</th>
+<th>Arduino Uno</th>
+<th>Arduino Mega 2560</th>
+<th>Arduino Nano</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontrolador</td>
+<td>ATmega328P</td>
+<td>ATmega2560</td>
+<td>ATmega328P</td>
+</tr>
+<tr>
+<td>Pines digitales I/O</td>
+<td>14</td>
+<td>54</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Entradas analógicas</td>
+<td>6</td>
+<td>16</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Memoria flash</td>
+<td>32 KB</td>
+<td>256 KB</td>
+<td>32 KB</td>
+</tr>
+<tr>
+<td>Conexión USB</td>
+<td>USB tipo B</td>
+<td>USB tipo B</td>
+<td>Mini/Micro USB</td>
+</tr>
+<tr>
+<td>Uso recomendado</td>
+<td>Aprendizaje y proyectos medianos</td>
+<td>Proyectos complejos con muchos periféricos</td>
+<td>Proyectos compactos o portátiles</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+{% endblock %}

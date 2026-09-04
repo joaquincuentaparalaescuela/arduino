@@ -1,0 +1,128 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block title %}Proyectos - ArduinoWiki{% endblock %}
+
+{% block content %}
+
+<section class="hero-section proyectos-hero mb-5">
+  <span class="eyebrow">Ficha N.º 04 — Proyectos y perfil</span>
+  <h1 class="hero-title">Proyectos con Arduino</h1>
+  <p class="hero-subtitle">
+    Ideas que combinan electrónica, programación y creatividad para transformar
+    una necesidad en un prototipo funcional.
+  </p>
+</section>
+
+<section class="mb-5">
+  <span class="section-label">01 · Posibilidades</span>
+  <h2 class="section-title mb-4">¿Qué se puede hacer con Arduino?</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <article class="project-card h-100">
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1000&q=80"
+             class="project-img" alt="Robot construido como proyecto electrónico">
+        <div class="project-body">
+          <span class="project-number">01</span>
+          <h3>Robótica</h3>
+          <p>
+            Arduino permite controlar motores, servomotores y sensores para crear
+            robots móviles, brazos robóticos y sistemas que reaccionan a su entorno.
+            Es una excelente forma de unir programación con electrónica y mecánica.
+          </p>
+          <span class="project-tag">Motores · Sensores · Control</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="project-card h-100">
+        <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1000&q=80"
+             class="project-img" alt="Dispositivos de un hogar inteligente">
+        <div class="project-body">
+          <span class="project-number">02</span>
+          <h3>Domótica</h3>
+          <p>
+            Se pueden automatizar luces, persianas, ventiladores, sistemas de riego
+            y alarmas. Los sensores detectan cambios y Arduino ejecuta las acciones
+            programadas según las condiciones del proyecto.
+          </p>
+          <span class="project-tag">Automatización · Sensores · Hogar</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="project-card h-100">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"
+             class="project-img" alt="Circuitos electrónicos utilizados en prototipos">
+        <div class="project-body">
+          <span class="project-number">03</span>
+          <h3>Prototipado electrónico</h3>
+          <p>
+            Antes de fabricar un producto definitivo, Arduino sirve para comprobar
+            rápidamente una idea. LEDs, botones, pantallas, potenciómetros y módulos
+            permiten construir una primera versión y detectar problemas.
+          </p>
+          <span class="project-tag">Prototipos · LEDs · Interfaces</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="project-card h-100">
+        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1000&q=80"
+             class="project-img" alt="Cultivo utilizado para proyectos de agricultura">
+        <div class="project-body">
+          <span class="project-number">04</span>
+          <h3>Agricultura inteligente</h3>
+          <p>
+            Con sensores de humedad, temperatura y luz es posible construir sistemas
+            de monitoreo y riego automático. Así, un proyecto puede tomar decisiones
+            a partir de datos reales del ambiente.
+          </p>
+          <span class="project-tag">Humedad · Riego · Monitoreo</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="project-card h-100">
+        <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=1000&q=80"
+             class="project-img" alt="Instalación artística y creativa">
+        <div class="project-body">
+          <span class="project-number">05</span>
+          <h3>Arte interactivo</h3>
+          <p>
+            La electrónica también puede convertirse en una herramienta artística.
+            Luces, sonido, movimiento y sensores permiten crear instalaciones,
+            esculturas y objetos que responden a las personas.
+          </p>
+          <span class="project-tag">Creatividad · Luz · Interacción</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="project-card h-100">
+        <div class="project-placeholder">
+          <span>⚙</span>
+          <small>IDEA + CÓDIGO + CIRCUITO</small>
+        </div>
+        <div class="project-body">
+          <span class="project-number">06</span>
+          <h3>Proyectos educativos</h3>
+          <p>
+            Arduino es especialmente útil para aprender haciendo: un ejercicio puede
+            convertirse en un semáforo, una estación meteorológica, un teclado,
+            un contador o cualquier prototipo que resuelva un problema concreto.
+          </p>
+          <span class="project-tag">Aprendizaje · Programación · DIY</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

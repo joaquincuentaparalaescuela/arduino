@@ -1,0 +1,124 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block title %}Ficha personal - ArduinoWiki{% endblock %}
+
+{% block content %}
+
+<section class="hero-section profile-hero mb-5">
+  <span class="eyebrow">Ficha N.º 05 — Perfil personal</span>
+  <h1 class="hero-title">Ficha personal</h1>
+  <p class="hero-subtitle">
+    Un pequeño espacio para conocer al estudiante detrás de ArduinoWiki,
+    sus intereses y su recorrido actual.
+  </p>
+</section>
+
+<section class="profile-section mb-5">
+  <div class="row g-0 align-items-stretch">
+    <div class="col-lg-5">
+      <div class="profile-intro">
+        <span class="section-label">01 · Presentación</span>
+        <div class="profile-avatar">JP</div>
+        <h2 class="profile-name">Joaquin Pinto</h2>
+        <p class="profile-role">Estudiante de 5.º año de secundaria técnica</p>
+        <span class="profile-status">2026 · En formación técnica</span>
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      <div class="profile-data">
+        <span class="spec-plate-title">Ficha personal</span>
+
+        <div class="profile-row">
+          <span>Nombre</span>
+          <strong>Joaquin Pinto</strong>
+        </div>
+
+        <div class="profile-row">
+          <span>Edad</span>
+          <strong>18 años</strong>
+        </div>
+
+        <div class="profile-row">
+          <span>Situación actual</span>
+          <strong>5.º año de secundaria técnica</strong>
+        </div>
+
+        <div class="profile-row">
+          <span>Año</span>
+          <strong>2026</strong>
+        </div>
+
+        <div class="profile-row">
+          <span>Intereses</span>
+          <strong>Programación y electrónica</strong>
+        </div>
+
+        <div class="profile-row">
+          <span>Hobby</span>
+          <strong>Dibujar</strong>
+        </div>
+
+        <p class="profile-text">
+          Soy Joaquin Pinto, tengo 18 años y actualmente curso 5.º año de
+          secundaria técnica. Me interesa aprender cómo funcionan las cosas
+          y convertir ideas en proyectos. También disfruto dibujar, una
+          actividad que me permite desarrollar mi creatividad y prestar
+          atención a los detalles.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certificate-section mb-5">
+  <div class="certificate-heading">
+    <span class="section-label">02 · Certificación</span>
+    <h2 class="section-title">Certificado de finalización</h2>
+    <p class="section-intro">
+      Una constancia que forma parte del recorrido de aprendizaje en programación.
+    </p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="{% static 'portal/img/asddaa.jpg' %}"
+         class="certificate-img"
+         alt="Certificado de finalización de Hour of Code">
+
+    <div class="certificate-actions">
+      <a href="{% static 'portal/img/asddaa.jpg' %}"
+         class="btn btn-vintage"
+         download="certificado-hour-of-code.jpg">
+        Descargar certificado ↓
+      </a>
+      <span class="certificate-note">JPG · Disponible para descargar</span>
+    </div>
+  </div>
+</section>
+<section class="certificate-section mb-5">
+  <div class="certificate-heading">
+    <span class="section-label"> Certificación</span>
+    <h2 class="section-title">Certificado de finalización</h2>
+    <p class="section-intro">
+      Una constancia que forma parte del recorrido de aprendizaje en programación.
+    </p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="{% static 'portal/img/certificado-minecraft.jpg' %}"
+         class="certificate-img"
+         alt="Certificado de finalización de Hour of Code">
+
+    <div class="certificate-actions">
+      <a href="{% static 'portal/img/certificado-minecraft.jpg' %}"
+         class="btn btn-vintage"
+         download="certificado-hour-of-code.jpg">
+        Descargar certificado ↓
+      </a>
+      <span class="certificate-note">JPG · Disponible para descargar</span>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'portal/base.html' %}
+{% block title %}Inicio - ArduinoWiki{% endblock %}
+{% block content %}
+
+<!-- HERO -->
+<section class="hero-section mb-5">
+<span class="eyebrow">Ficha N.º 01 — Plataforma de hardware libre</span>
+<h1 class="hero-title">Arduino</h1>
+<p class="hero-subtitle">La placa que acercó la electrónica y la programación a cualquier persona con una idea.</p>
+<a href="{% url 'tipos' %}" class="btn btn-vintage mt-3">Ver tipos de placas →</a>
+<a href="{% url 'proyectos' %}" class="btn btn-vintage mt-3">Ver proyectos →</a>
+</section>
+
+<!-- HISTORIA -->
+<section id="historia" class="mb-5">
+<div class="row g-4 align-items-start">
+<div class="col-lg-7">
+<span class="section-label">01 · Historia</span>
+<h2 class="section-title">De un aula en Ivrea al mundo entero</h2>
+<p>
+Arduino nació en 2005 en el Interaction Design Institute Ivrea, en Italia, como
+respuesta a un problema muy concreto: los estudiantes de diseño necesitaban una
+herramienta simple y económica para crear prototipos electrónicos interactivos,
+sin tener que atravesar la curva de aprendizaje de la electrónica tradicional.
+</p>
+<p>
+Un grupo liderado por Massimo Banzi, junto a David Cuartielles, Tom Igoe,
+Gianluca Martino y David Mellis, diseñó una placa de bajo costo programable
+mediante un entorno de desarrollo (IDE) muy accesible, basado en un lenguaje
+simplificado inspirado en Wiring y Processing. El nombre del proyecto es un
+homenaje a un bar de Ivrea que a su vez recordaba a Arduino de Ivrea, un rey
+italiano del siglo XI.
+</p>
+<p>
+Desde el primer momento, el hardware y el software se liberaron bajo licencias
+abiertas: cualquiera podía estudiar, modificar y fabricar sus propias versiones
+de la placa. Esa decisión —más que cualquier característica técnica— fue la que
+permitió que Arduino dejara de ser un proyecto universitario y se convirtiera en
+un estándar mundial para el prototipado electrónico, con una comunidad enorme de
+makers, docentes e industrias que siguen ampliando lo que la plataforma puede hacer.
+</p>
+</div>
+<div class="col-lg-5">
+<div class="spec-plate">
+<span class="spec-plate-title">Ficha técnica del proyecto</span>
+<ul class="spec-list">
+<li><span>Año de origen</span><strong>2005</strong></li>
+<li><span>Lugar</span><strong>Ivrea, Italia</strong></li>
+<li><span>Fundadores</span><strong>Banzi, Cuartielles, Igoe, Martino, Mellis</strong></li>
+<li><span>Licencia</span><strong>Hardware y software libres</strong></li>
+<li><span>Lenguaje</span><strong>Basado en Wiring / C++</strong></li>
+<li><span>Filosofía</span><strong>Prototipado accesible para todos</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTORES / RUBROS -->
+<section id="sectores" class="mb-4">
+<span class="section-label">02 · Aplicaciones</span>
+<h2 class="section-title mb-4">¿Quiénes usan Arduino y para qué?</h2>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+<div class="col">
+<div class="rubro-card h-100">
+<span class="rubro-icon">🎓</span>
+<h3>Educación</h3>
+<p>Escuelas técnicas y universidades lo usan para enseñar programación y
+electrónica de forma práctica, dejando que los estudiantes vean sus
+circuitos e ideas cobrar vida de inmediato.</p>
+</div>
+</div>
+
+<div class="col">
+<div class="rubro-card h-100">
+<span class="rubro-icon">🛠️</span>
+<h3>Makers y aficionados</h3>
+<p>La comunidad DIY lo elige para construir robots, instrumentos musicales
+y todo tipo de inventos personales, gracias a su bajo costo y a la enorme
+cantidad de tutoriales disponibles.</p>
+</div>
+</div>
+
+<div class="col">
+<div class="rubro-card h-100">
+<span class="rubro-icon">🏠</span>
+<h3>Domótica</h3>
+<p>En el hogar inteligente se emplea para automatizar luces, riego,
+alarmas y sensores de temperatura, conectando objetos cotidianos entre sí.</p>
+</div>
+</div>
+
+<div class="col">
+<div class="rubro-card h-100">
+<span class="rubro-icon">🎭</span>
+<h3>Arte e instalaciones</h3>
+<p>Artistas y escenógrafos lo integran en esculturas cinéticas, luces
+interactivas y escenografías que responden al movimiento o sonido del público.</p>
+</div>
+</div>
+
+<div class="col">
+<div class="rubro-card h-100">
+<span class="rubro-icon">🏭</span>
+<h3>Industria y prototipado</h3>
+<p>Empresas lo utilizan para probar rápidamente una idea antes de invertir
+en un diseño electrónico definitivo, acelerando el desarrollo de productos.</p>
+</div>
+</div>
+
+<div class="col">
+<div class="rubro-card h-100">
+<span class="rubro-icon">🌾</span>
+<h3>Agricultura de precisión</h3>
+<p>En el campo permite armar estaciones con sensores de humedad y riego
+automático, ayudando a optimizar el uso del agua y de los recursos.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+{% endblock %}
